@@ -4,50 +4,69 @@
 	<meta charset="UTF-8">
 	<title>Final Homework of Responsive</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta property="og:title" content="六角西餐廳" />
+	<meta property="og:description" content="六角西餐廳以美式料理為主推出的美味漢堡、薯條套餐，聘請有名的大廚，為您提供完美的味蕾饗宴。" />
+	<meta property="og:image" content="images/Bitmap.PNG" />
+	<meta property="og:site_name" content="六角西餐廳" />
+	<meta property="og:type" content="website" />
+	<meta property="og:locale" content="zh_TW" />
+	<meta property="og:url" content="https://enginelin.github.io/RWDPracticing01/" />
+	
 	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/webFormwork.css">
-	<link rel="stylesheet" href="css/headPagestyle.css">
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<div class="wrap">
-		<div class="header">
-			<div class="topBanner">
-				<a href="#" class="logo"><h1>六角西餐廳</h1></a>
-				<ul class="menuOut">
-					<a href="#"><li class="menuOutside">特色</li></a>
-					<a href="#"><li class="menuOutside">主廚</li></a>
-					<a href="#"><li class="menuOutside">地圖</li></a>
+	<div id="wrap">
+		<!-- header -->
+		<div id="header">
+			<!-- navbar -->
+			<div id="banner">
+				<h1 ><a href="#" class="logo">六角西餐廳</a></h1>
+				<ul id="menuOutside">
+					<li class="menuOutsideList"><a href="#">特色</a></li>
+					<li class="menuOutsideList"><a href="#">主廚</a></li>
+					<li class="menuOutsideList"><a href="#">地圖</a></li>
 				</ul>
-				<a class="bar" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a><!-- 漢堡選單 -->
+				<!-- 手機介面的漢堡選單 -->
+				<a id="bar" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+				<ul id="menuInside">
+					<li class="menuInsideList"><a href="#">特色</a></li>
+					<li class="menuInsideList"><a href="#">主廚</a></li>
+					<li class="menuInsideList"><a href="#">地圖</a></li>
+				</ul>
 				<div class="clearFix"></div>
 			</div>
-			<ul class="menuIn">
-				<a href="#"><li class="menuInside">特色</li></a>
-				<a href="#"><li class="menuInside">主廚</li></a>
-				<a href="#"><li class="menuInside">地圖</li></a>
-			</ul>
-			<div class="title">
+			<!-- title -->
+			<div id="title">
 				<h2><span>咬一口</span>就無法忘懷的漢堡</h2>
 				<p>七夕絕對無法錯過的好滋味</p>
 				<p><i class="fa fa-cutlery" aria-hidden="true"></i> 六角大漢堡 <i class="fa fa-cutlery" aria-hidden="true"></i></p>
 			</div>
-			<div class="clearFix"></div>
 		</div>
+		
+		<!-- content -->
 		<div class="content">
 			<div class="cnt_Banner">
 				<div class="line1"></div>
 				<h2 class="cnt_text">客人總是在問<br>這麼好吃的秘訣是什麼</h2>
 				<div class="line2"></div>
-				<div class="clearFix"></div>
 			</div>
 			<ul class="cnt_list">
-				<li class="feature01"><h3>台灣本土蔬菜</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro enim doloremque, possimus? Reiciendis voluptas similique quisquam aliquam, odio corrupti voluptatum accusamus doloribus provident facere excepturi quaerat id molestias veritatis nobis.</p></li>
-				<li class="feature02"><h3>專業米其林廚師</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo rem illum consectetur dolorem quidem voluptatibus labore, sapiente dignissimos quas amet doloremque expedita hic aut, soluta provident ipsum. Placeat, expedita, provident.</p></li>
-				<li class="feature03"><h3>對於專業不能退讓</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, sed iusto eum aperiam, doloremque ipsa. Illum qui deleniti ad atque voluptatem dolorum, libero doloribus odit.</p></li>
-				<div class="clearFix"></div>
+				<li class="feature01">
+					<h3>台灣本土蔬菜</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro enim doloremque, possimus? Reiciendis voluptas similique quisquam aliquam, odio corrupti voluptatum accusamus doloribus provident facere excepturi quaerat id molestias veritatis nobis.</p></li>
+				<li class="feature02">
+					<h3>專業米其林廚師</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo rem illum consectetur dolorem quidem voluptatibus labore, sapiente dignissimos quas amet doloremque expedita hic aut, soluta provident ipsum. Placeat, expedita, provident.</p></li>
+				<li class="feature03">
+					<h3>對於專業不能退讓</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, sed iusto eum aperiam, doloremque ipsa. Illum qui deleniti ad atque voluptatem dolorum, libero doloribus odit.</p></li>
 			</ul>
+			<div class="clearFix"></div>
 		</div>
+
+		<!-- introducting chef -->
 		<div class="intro_chef">
 			<div class="chefPic"></div>
 			<div class="chefText">
@@ -57,31 +76,34 @@
 			</div>
 			<div class="clearFix"></div>
 		</div>
+
+		<!-- responses -->
 		<div class="responses">
 			<h2>聽聽別人的感想</h2>
 			<ul>
 				<li class="pushTop"><img src="images/avatar_1.png" alt="avatar 01"></img>
-						<h3>高雄一口吃</h3>
-						<p>自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
-						<br>
-						<p class="job_title"> -- 產品經理</p>
-					</li>
+					<h3>高雄一口吃</h3>
+					<p>自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
+					<br>
+					<p class="job_title"> -- 產品經理</p>
+				</li>
 				<li><img src="images/avatar_2.png" alt="avatar 02"></img>
-						<h3>廟口小霸王</h3>
-						<p>自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
-						<br>
-						<p class="job_title"> -- 金身道士</p>
-					</li>
+					<h3>廟口小霸王</h3>
+					<p>自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
+					<br>
+					<p class="job_title"> -- 金身道士</p>
+				</li>
 				<li><img src="images/avatar_3.png" alt="avatar 03"></img>
-						<h3>春天也來了</h3>
-						<p>自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
-						<br>
-						<p class="job_title"> -- 美麗萬分</p>
-					</li>
-				<div class="clearFix"></div>
+					<h3>春天也來了</h3>
+					<p>自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。</p>
+					<br>
+					<p class="job_title"> -- 美麗萬分</p>
+				</li>
 			</ul>
-
+			<div class="clearFix"></div>
 		</div>
+
+		<!-- 表單 -->
 		<div class="table">
 			<h2>我們的位置不太夠坐<br>要不要先定位呢？</h2>
 			<div class="mapBox"></div>
@@ -106,7 +128,9 @@
 			</form>
 		<div class="clearFix"></div>
 		</div>
-		<div class="footer">
+
+		<!-- footer -->
+		<div id="footer">
 			<div class="about">
 				<h2>關於 六角西餐廳</h2>
 				<p>Curabitur lobortis id lorem id bibndum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at.</p>
@@ -122,15 +146,15 @@
 			<div class="messageOus">
 				<img class="logo2" src="images/logo_l@svg.svg" alt="">
 				<ul class="contactIcon">
-					<a href="#"><li><img src="images/icon_facebook.png" alt=""></li></a>
-					<a href="#"><li><img src="images/icon_googlePlus.png" alt=""></li></a>
-					<a href="#"><li><img src="images/icon_Twitter.png" alt=""></li></a>
+					<li><a href="#"><img src="images/icon_facebook.png" alt=""></a></li>
+					<li><a href="#"><img src="images/icon_googlePlus.png" alt=""></a></li>
+					<li><a href="#"><img src="images/icon_Twitter.png" alt=""></a></li>
 				</ul>
 			</div>
 			<div class="clearFix"></div>
 		</div>
 	</div>
 	<script src="scripts/jquery-1.9.0.min.js"></script>
-	<script src="scripts/webFormwork.js"></script>
+	<script src="scripts/all.js"></script>
 </body>
 </html>
